@@ -1,0 +1,143 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    color:  rgb(71 85 105);
+    border-bottom: 1px solid rgb(212, 205, 205);
+    height: 10vh;
+}
+
+.logo-section-lg{
+    display: flex;
+    flex-direction: row;
+    width: 50vh;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logo{
+    height: 6vh;
+    display:block;
+    transform: translateX(16px);
+}
+.navbar-lg{
+    width: 120vh;
+    padding: 2rem;
+}
+.nav-list-lg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+li{
+    list-style: none;
+    
+}
+.nav-link{
+    color: rgb(71 85 105);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link:hover,.logo-text:hover{
+    color: black;
+}
+.nav-icons,
+.bx-menu,
+.bx-x{
+    display: none;
+}
+i{
+    font-size: 1.3rem;
+}
+
+
+@media screen and (max-width: 765px) {
+    .container{
+        top: initial;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+    }
+    .nav-icons{
+        display: block;
+    }
+    .nav-link{
+        font-size: 1rem;
+    }
+    .navbar{
+        height: 30vh;
+        width: 100%;
+        padding: 1rem;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border-top: 2px solid rgb(212, 205, 205);
+        background-color: rgb(244 244 245);
+        transition: all .3s;
+    }
+    .close-navbar{
+        height: 10vh;
+        width: 100%;
+        transition: all .3s linear;
+    }
+    .nav-close-icon{
+        display: block;
+        font-size: 1.5rem;
+        text-align: right;
+        padding-right:1rem ;
+        }
+    .gayab{
+        display: none;
+    }
+    .nav-list{
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr);
+        gap: 2rem;
+        padding: 0% 2rem 0% 2rem;
+    }
+    .logo-section{
+        display: inline-flex;
+        transition: all .3s;
+    }
+    .nav-menu-icon{
+        display: block;
+        text-align: right;
+        margin-top:0.7rem ;
+        font-size: 1.5rem;
+        margin-right: 3rem;
+    }
+   
+}
+
+@media screen and (max-width:465px){
+    .nav-link{
+        font-size: small;
+    }       
+    i{
+        font-size: 1rem;
+    }
+    .navbar{
+        height: 28vh;
+    }
+}
+/* @media screen and (max-width:400px){
+    .navbar{
+        height: 40vh;
+    }
+} */
+@media screen and (max-width:400px){
+    .navbar{
+        height: 20vh;
+    }
+}

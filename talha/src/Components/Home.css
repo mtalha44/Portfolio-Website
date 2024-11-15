@@ -1,0 +1,109 @@
+a{
+    text-decoration: none;
+    color: rgb(71 85 105);
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.home-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: bisque; */
+    width: 22rem;
+    
+}
+.btn-hire{
+    background-color: rgb(20, 64, 126);
+    color: white;
+    border: none;
+    letter-spacing: 0.1rem;
+    /* padding: 0.5rem; */
+    padding: 0.5rem 1rem ;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.bxl-telegram{
+    transform: translateY(3px);
+}
+.home-data-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-2rem);
+
+}
+.home-data-title{
+    /* display: grid; */
+    /* grid-template-columns:repeat( 2,1fr); */
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: larger;
+    /* color: ; */
+    
+}
+.main{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    margin: 2rem 9rem 1rem 8rem;
+    gap: 6rem;
+}
+.social-icons{
+    display: grid;
+    gap: 1rem;
+    margin-top: 7rem;
+}
+.home-subtitle{
+    color: rgb(71 85 105);
+    position: relative;
+    font-size: 1.2rem;
+    /* background-color: red; */
+}
+.home-subtitle::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: rgb(20, 64, 126);
+    top: 51%;
+    left: -80px
+}
+.home-title{
+    /* background-color: aqua; */
+}
+.hand-img{
+    height: 30px ; 
+    width : 30px ;
+}
+.home-profile-img{
+    background-image: url("/img/profile-img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 20rem;
+    order: 1;
+    justify-self: center;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 40%);   
+    animation: profille_img 8s ease-in-out infinite 1s;
+}
+
+@keyframes profille_img {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }        
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }     
+    100%{                
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }    
+}
