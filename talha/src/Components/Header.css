@@ -7,27 +7,28 @@
     color:  rgb(71 85 105);
     border-bottom: 1px solid rgb(212, 205, 205);
     height: 10vh;
+    /* background-color: bisque; */
+    /* overflow: hidden; */
+    /* width: 165vh; */
 }
 
 .logo-section-lg{
-    display: flex;
-    flex-direction: row;
-    width: 50vh;
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* width: 50vh; */
+    width: 15%;
     cursor: pointer;
+    /* background-color: aqua; */
 }
 
 .logo{
     height: 6vh;
     display:block;
-    transform: translateX(16px);
+    transform: translateX(30px);
 }
 .navbar-lg{
-    width: 120vh;
+    /* width: 100vh; */
+    width: 45%;
     padding: 2rem;
+    /* background-color: blueviolet; */
 }
 .nav-list-lg{
     display: flex;
@@ -37,10 +38,7 @@
     font-size: 1.1rem;
     font-weight: 550;
 }
-li{
-    list-style: none;
-    
-}
+
 .nav-link{
     color: rgb(71 85 105);
     text-decoration: none;
@@ -58,7 +56,7 @@ li{
     display: none;
 }
 i{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 
@@ -67,8 +65,9 @@ i{
         top: initial;
         bottom: 0;
         position: fixed;
-        width: 100%;
+        width:100%;
         height: 10vh;
+        z-index: 1000;
     }
     .nav-icons{
         display: block;
@@ -77,17 +76,21 @@ i{
         font-size: 1rem;
     }
     .navbar{
-        height: 30vh;
-        width: 100%;
-        padding: 1rem;
+         width: 100% !important;
+        height: 33vh; 
+        /* overflow: hidden; */
+        padding: 0.5rem 1rem 1rem  1rem;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         border-top: 2px solid rgb(212, 205, 205);
         background-color: rgb(244 244 245);
-        transition: all .3s;
+        /* background-color: aqua; */
+        transition: all .3s ease-out;
+        /* z-index: 1000;  */
     }
     .close-navbar{
-        height: 10vh;
+        height: 10vh !important;
+        /* background-color: aquamarine; */
         width: 100%;
         transition: all .3s linear;
     }
@@ -96,15 +99,16 @@ i{
         font-size: 1.5rem;
         text-align: right;
         padding-right:1rem ;
-        }
+        
+    }
     .gayab{
         display: none;
     }
     .nav-list{
         display: grid;
         grid-template-columns: repeat( 3, 1fr);
-        gap: 2rem;
-        padding: 0% 2rem 0% 2rem;
+        gap: 1.8rem;
+        padding: 0% 1rem 0% 1rem;
     }
     .logo-section{
         display: inline-flex;
@@ -112,32 +116,33 @@ i{
     }
     .nav-menu-icon{
         display: block;
-        text-align: right;
-        margin-top:0.7rem ;
         font-size: 1.5rem;
-        margin-right: 3rem;
+        margin-right: 2rem;
     }
    
 }
 
 @media screen and (max-width:465px){
     .nav-link{
-        font-size: small;
+        font-size: 0.8rem;
+        
     }       
-    i{
-        font-size: 1rem;
-    }
     .navbar{
-        height: 28vh;
+        height: 36vh;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .navbar-lg{
+        width: 65%;
     }
 }
-/* @media screen and (max-width:400px){
-    .navbar{
-        height: 40vh;
-    }
-} */
-@media screen and (max-width:400px){
-    .navbar{
-        height: 20vh;
+
+@media screen and (max-width: 875px) {
+    
+    .navbar-lg{
+        width: 60%;
+        
     }
 }

@@ -6,8 +6,8 @@ export const Header = () => {
     const [ hideLi, setHide ] = useState(false);
 
     return (
-        <header className="container ">
-            <div className={ `logo-section-lg ${ !hideLi ? "gayab" : "logo-section"}`}>
+        <header className="container">
+            <div className={ `logo-section-lg flex-row ${ !hideLi ? "gayab" : "logo-section"}`}>
             <img src="/logo/Tlogo.png" alt="T" className="logo" />            
             <h3 className="logo-text">ALHA</h3>
             </div>
@@ -22,9 +22,9 @@ export const Header = () => {
                     
 
                 </ul>
-                <i className={ ` bx bx-menu  ${ !hideLi ? "gayab" : "nav-menu-icon"}` } onClick={() => setHide(!hideLi)}></i>
                 <i className={`bx bx-x  ${hideLi ? "gayab" : "nav-close-icon"}`} onClick={() => setHide(!hideLi)}></i>
             </nav>
+                <i className={ ` bx bx-menu  ${ !hideLi ? "gayab" : "nav-menu-icon"}` } onClick={() => setHide(!hideLi)}></i>
         </header>
     )
 }
