@@ -7,28 +7,28 @@
     color:  rgb(71 85 105);
     border-bottom: 1px solid rgb(212, 205, 205);
     height: 10vh;
-    /* background-color: bisque; */
+    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(248, 250, 253); */
     /* overflow: hidden; */
-    /* width: 165vh; */
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    /* position:fixed; */
 }
 
 .logo-section-lg{
-    /* width: 50vh; */
-    width: 15%;
+    width: 10%;
     cursor: pointer;
-    /* background-color: aqua; */
 }
 
 .logo{
     height: 6vh;
     display:block;
-    transform: translateX(30px);
+    transform: translateX(20px);
 }
 .navbar-lg{
-    /* width: 100vh; */
-    width: 45%;
+    width: 50%; 
     padding: 2rem;
-    /* background-color: blueviolet; */
 }
 .nav-list-lg{
     display: flex;
@@ -77,22 +77,30 @@ i{
     }
     .navbar{
          width: 100% !important;
+         /* width: 100vw; */
         height: 33vh; 
+        background-color: rgb(240, 240, 240);
+
         /* overflow: hidden; */
         padding: 0.5rem 1rem 1rem  1rem;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         border-top: 2px solid rgb(212, 205, 205);
-        background-color: rgb(244 244 245);
+        /* background-color: rgb(244 244 245); */
         /* background-color: aqua; */
-        transition: all .3s ease-out;
+        transition: all .3s ease-in;
         /* z-index: 1000;  */
     }
+    /* .nav-list-lg{
+        background-color: bisque;
+        width: 100%;
+    } */
     .close-navbar{
         height: 10vh !important;
-        /* background-color: aquamarine; */
-        width: 100%;
-        transition: all .3s linear;
+        /* background-color: rgb(240, 240, 240); */
+        /* z-index: 1000; */
+        width: 100% !important;
+        transition: all .1s linear;
     }
     .nav-close-icon{
         display: block;
@@ -123,26 +131,37 @@ i{
 }
 
 @media screen and (max-width:465px){
+
     .nav-link{
         font-size: 0.8rem;
         
     }       
     .navbar{
-        height: 36vh;
+        height: 40vh;
+        /* width: 100% !important; */
     }
-
+    .logo-section-lg{
+        margin-left:20px;
+    }
+    .logo{
+        transform: translateX(25px) !important;
+    }
 }
 
-@media screen and (max-width: 1250px) {
-    .navbar-lg{
-        width: 65%;
-    }
-}
 
-@media screen and (max-width: 875px) {
+
+@media screen and (max-width: 975px) {
     
     .navbar-lg{
-        width: 60%;
+        width:65%;
         
     }
+
+    .nav-link{
+        font-size: medium;
+    }
+.logo{
+    transform: translateX(20px);
+}
+
 }

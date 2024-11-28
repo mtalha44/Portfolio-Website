@@ -1,46 +1,119 @@
+.home-container{
+  height:max-content;
+  /* margin-top: 5rem; */
+  transform: translateY(8rem);
+  gap: 4rem;
+}
+.main{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+/* Assigning Width to .home-data div */
 .home-data{
 
     width: 22rem;
     
 }
-.btn-hire{
-    background-color: rgb(20, 64, 126);
+
+/* Hire button Functionality */
+
+.hire-button {
+    min-width: 150px;
+    min-height: 30px;
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
     color: white;
+    background: rgba(34,87,122,1);
+    background: linear-gradient(90deg, rgba(23,63,95,1) 0%, rgba(34,87,122,1) 100%);
     border: none;
-    letter-spacing: 0.1rem;
-    padding: 0.8rem 1.1rem 1rem 1rem ;
-    border-radius: 1rem;
+    border-radius: 200px;
+    box-shadow: 8px 8px 8px rgba(34,87,122,0.5);
+    transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
-    font-size: 1.3rem;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    margin-right: 1rem;
 }
-.bxl-telegram{
-    transform: translateY(3px);
-}
+  
+  .hire-button::before {
+  content: '';
+    border-radius: 200px;
+    min-width: calc(150px + 12px);
+    min-height: calc(30px + 14px);
+    border: 6px solid rgba(34,87,122,1);
+    box-shadow: 0 0 60px  rgba(23,63,95,0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .hire-button:hover, 
+  .hire-button:focus {
+    color: white;
+    transform: translateY(-6px);
+  }
+  
+  .hire-button:hover::before, 
+  .hire-button:focus::before {
+    opacity: 1;
+  }
+  
+  .hire-button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid rgba(34,87,122,0.9);
+    position: absolute;
+    z-index: -1;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .hire-button:hover::after, 
+  .hire-button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 200px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+
 .home-data-description{
     transform: translateY(-2rem);
-
 }
 .home-data-title{
     gap: 0.5rem;
     font-size: larger;
 }
-.main{
-    /* display: grid;
-    grid-te-columns: repeat( 3 , 1fr); */
-    margin: auto;
-    
-    transform: translateY(5rem);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100vh;
-
-}
 .home-social{
     overflow: hidden;
-    /* background-color: green; */
     width: 3rem;
 }
 
@@ -64,11 +137,31 @@
     top: 51%;
     left: -80px
 }
-
+.home-description{
+  margin-left: 0.3rem;
+}
 .hand-img{
     height: 30px ; 
     width : 30px ;
+    animation: shake 0.8s infinite;
 }
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+
 .home-profile-img{
     background-image: url("/img/profile-img.jpg");
     background-size: cover;
@@ -92,75 +185,47 @@
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }    
 }
-.scroll-btn{
-    margin-top: 7.5rem;
-    width: 13rem;
-    margin-left:58vh;
-    font-size: larger;
-    color: rgb(71 85 105);
-}
 
 .bx-mouse{
     font-size: 2.5rem;
+  }
+.scroll-arrow{
+    font-size: 1.8rem;
+  }
+  .scroll-bth-handle{
+      cursor: pointer;
+      color: rgb(71 85 105);
+  }
+ 
+  .scroll-text{
+    font-size:1.2rem;
 }
 
+/* Media queries for responsiveness */
 
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 1250px) {
-  .main {
-        width: 150vh;
-        /* background-color: aqua; */
-        /* gap: 2rem; */
-/*}   
-}*/
-@media screen and (max-width: 1375px) {
-    .main {
-        width: 150vh;
-        .home-profile-img{
-            height:20rem ;
-            width: 20rem;
-        }
-        /* background-color: aqua; */
-        /* gap: 2rem; */
-   }
-   .home-profile-img{
-       height:20rem ;
-       width: 20rem;
-   }
-}
 @media screen and (max-width: 975px) {
-  .main {
-    width: 78vh;    
-   }
-   .home-profile-img{
-       height:15rem ;
-       width: 15rem;
-   }
+  .main{
+    width: 90%;
+  }
+  .home-profile-img{
+    height: 15rem;
+    width: 15rem;
+  }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 800px) {
   .main {
-       /* background-color: aqua; */
        display: flex;
-       width: 90%;
+       width: 80%;
+       /* background-color: antiquewhite; */
+       /* width: 90%; */
        overflow:hidden;
        flex-direction: column-reverse;
-       /* padding-left: 2rem; */
        margin-left: 2rem;
-       /* margin-top: 0rem; */
        gap: 1rem;
-
    }
    
    .home-social{
-    /* flex: none; */
     transform: translateY(-32rem);
     margin-right: 5rem;
    }
@@ -168,23 +233,25 @@
        margin-left: 5rem;
    }
    .home-data{
-    /* padding-left: 4rem; */
     margin-left: 4rem;
-    /* margin-top: em; */
     display: inline-block !important;
    }
 
    .home-description{
-     width: 60vh;
-    margin-left: 13rem; 
+    padding: 10px;
+     /* background-color: aquamarine; */
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; 
+     font-size: 15px; /*Adjust font size for better readability */
+    width: 100%; 
+    margin-left: 0rem !important;
+   }
+   .bx-mouse,.scroll-arrow,.scroll-bth-handle{
+     display: none;
    }
 }
-@media  screen and (max-width: 665px) {
-    .home-description{
-        width: 50vh;
-       margin-left:8rem; 
-      }
-}
+
 @media  screen and (max-width: 665px) {
     .home-data{
       display: inline-flex !important;
@@ -207,9 +274,6 @@
  
     }
     .home-social{
-        /* transform: translate(-5rem ,30rem); */
-        /* transform: translate(0rem ,30rem); */
-        /* background-color: aquamarine; */
         margin-right:18rem;
         margin-top: 1rem;
     }
@@ -218,23 +282,11 @@
     .main{
         width: 85%;
         overflow: hidden;
-        /* margin-right: rem; */
-        /* margin-right: 0rem; */
-        /* margin-left: 0rem !important; */
+
         margin: auto;
         margin-top: 0rem;
     }
-    .home-description{
-
-        padding: 10px;
-     
-        word-wrap: break-word; 
-        overflow-wrap: break-word;
-        white-space: normal; 
-         font-size: 15px; /*Adjust font size for better readability */
-        width: 100%; 
-        margin-left: 0rem !important;
-    }
+    
     .home-data-title{
         font-size: medium;
     }
@@ -244,10 +296,7 @@
         margin-top: 3rem;
         margin-right: 13rem; 
     }
-    .btn-hire{
-        font-size: medium;
-        padding: 0.4rem 1rem 0.7rem 1rem;
-    }
+
     .home-profile-img{
         height: 13rem;
         width: 13rem;
@@ -261,33 +310,31 @@
         top: 51%;
         left: -56px
     }
+    
 }
 @media screen and (max-width: 455px) {
     .main{
-        /* background-color: antiquewhite; */
-        padding-right: 1rem;
-    }
-    .btn-hire{
-        margin-right: 1rem;
+        max-width: 80%;
+        padding-right: 3rem !important;
+        /* background-color: aqua; */
+        overflow: hidden;
+        /* margin-top: 0rem; */
     }
     .home-description{
         /* background-color: #a4f9c8; */
+        margin-right: 2rem !important;
         padding: 20px;
         border-radius: 10px;
         word-wrap: break-word;
         overflow-wrap: break-word;
         white-space: normal; 
         font-size: 14px; /* Adjust font size for better readability */
-        width: 75%; 
-        /* margin-right: 2rem; */
-        /* margin-right: 1rem !important; */
+        /* width: 75%;  */
     }
     .home-data-title{
         font-size: small;
     }
     .home-social{
-        /* font-size: 5px; */
-        /* background-color: bisque; */
         margin-top: 4rem;
         margin-right: 13rem; 
          height: 8rem;
@@ -297,10 +344,7 @@
         font-size: 1rem;
         ;
     }
-    .btn-hire{
-        font-size: medium;
-        padding: 0.4rem 1rem 0.7rem 1rem;
-    }
+
     .home-profile-img{
         margin-left: 2rem;
         height: 10rem;
