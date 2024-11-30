@@ -1,0 +1,113 @@
+
+.skills-title-text{
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.skills-title{
+    line-height: 0px;
+}
+.skills-sub-title{
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.skills{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.skills-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+.skills-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    width: 25rem;
+    gap: 1rem;
+    border-radius: 12px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.skill-info-comp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.skill-level{
+    font-size:small;
+}
+.skill-items{
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width:6.5rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 975px) {
+    .skills-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }   
+    .skills-title{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .skill-level{
+        font-size:0.7rem;
+    }
+    .skill-name{
+        font-size: 0.76rem;
+    }
+    .skill-items{
+        width: 5.5rem;
+        height: 6rem;
+    }
+    .skills-info{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 475px) {
+    .skill-level{
+        font-size:0.7rem;
+    }
+    .skill-name{
+        font-size: 0.76rem;
+    }
+    .skill-items{
+        width: 5.5rem;
+        height: 6rem;
+    }
+    .skills-info{
+        width: 15rem;
+    }
+    .skill-info-name{
+        font-size: 1.15rem;
+    }
+    .skills{
+        margin-bottom: 5rem;
+    }
+}
