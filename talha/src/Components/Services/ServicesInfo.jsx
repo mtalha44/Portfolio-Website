@@ -47,7 +47,7 @@ export const ServicesInfo = () => {
                             {/* <div className="services-further-details flex-row" onClick={closeToggleCard}>{Services.option}</div> */}
                             <div className="services-further-details flex-row" key={idx} onClick={() => closeToggleCard(idx)}>{Services.option}</div>
             
-                        <div className={ toggleCardClose ? "gayab" : "services-toggle-card" }>
+                        <div className={ toggleCardClose ? "closeToggleCard" : "services-toggle-card" }>
                                 
                                 <div className="card-detail">
             

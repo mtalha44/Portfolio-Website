@@ -7,7 +7,7 @@ import { useState } from "react"
 export const Services = () =>{
     
     return (
-        <div className="services">
+        <div className="services" id="services">
             <div className="service-title flex-col">
                 <h1>Services </h1> 
                 <p>My Offered Services</p>

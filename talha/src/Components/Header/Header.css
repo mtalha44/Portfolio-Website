@@ -46,6 +46,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .nav-link:hover,.logo-text:hover{
     color: black;

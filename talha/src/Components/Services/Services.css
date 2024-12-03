@@ -84,10 +84,15 @@
     align-items: flex-end;
     
 }
-.gayab{
+.closeToggleCard{
     display: none;
 }
-
+.card-detail-list-icon{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.2rem;
+    align-items: center;
+}
 @media screen and ( max-width : 795px){
     .services-info-card-details{
         width: 9rem;
@@ -104,7 +109,22 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .card-detail{
+        width: 18rem;
+        padding: 1.4rem;
+        
+    }
+    .card-detail-heading{
+        font-size: 0.8rem;
+    }
+    .card-detail-list-icon{
+        font-size: smaller;
+        display: flex;
+        align-items: flex-start;
+    }
+    i{
+        /* font-size: 1.2rem !important; */
+    }
 }
 @media screen and ( max-width : 425px){
     .services-info-card-details{

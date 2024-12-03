@@ -58,7 +58,7 @@ export const ServicesToggleCard = ({handleToggleCard , idxVal}) => {
  
     return (
       
-      CardDetail[1].list.map((list , idxe ) =>(
+      CardDetail[idxVal].list.map((list , idxe ) =>(
           <div key={idxe} className={  closeToggleCard ? "gayab" : "toggle-card-detail " }>
                { idxe == 0 && <div className="card-detail-heading-container"> 
                 <i className='bx bx-x-circle close-toggle-card' onClick={handleToggleCardClose}></i>
@@ -71,8 +71,11 @@ export const ServicesToggleCard = ({handleToggleCard , idxVal}) => {
               <div className="card-detail-list-container">
 
                 <li className="card-detail-list">
-                 {CardDetail[1].icon}
+                 <span className="card-detail-list-icon">
+                  
+                {CardDetail[idxVal].icon}
                  {list}
+                </span>
                  
                 </li>
 

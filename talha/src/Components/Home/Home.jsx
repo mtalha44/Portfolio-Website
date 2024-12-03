@@ -5,7 +5,7 @@ export const Home = () => {
     
     return(
         <>
-        <div className="home-container flex-col">
+        <div className="home-container flex-col" id="home">
 
         <div className="main">
 

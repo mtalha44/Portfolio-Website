@@ -1,6 +1,6 @@
 import "./Header.css"
 import { useState } from "react";
-
+import { Link } from 'react-scroll';
 export const Header = () => {
 
     const [ hideLi, setHide ] = useState(false);
@@ -13,12 +13,12 @@ export const Header = () => {
             </div>
             <nav className={`navbar-lg ${ !hideLi ? "close-navbar" : "navbar"} `}>
                 <ul className={`nav-list-lg ${ !hideLi ? "gayab" : "nav-list" }`}>
-                    <li>    <a href="#Home"     className="nav-link">     <i className='bx nav-icons  bx-home'></i> Home</a>          </li>
-                    <li>    <a href="#About"    className="nav-link">    <i className='bx nav-icons bx-user'></i> About</a>          </li>
-                    <li>    <a href="#Serices"  className="nav-link">  <i className='bx nav-icons bx-briefcase' ></i> Services</a> </li>
-                    <li>    <a href="#Skills"   className="nav-link">   <i className='bx nav-icons bx-award' ></i> Skills</a>       </li>
-                    <li>    <a href="#Portfolio"className="nav-link"><i className='bx nav-icons bx-image' ></i> Portfolio</a>    </li>
-                    <li>    <a href="#Contact"  className="nav-link">  <i className='bx nav-icons bx-message-rounded-dots'></i> Contact</a> </li>
+                    <li>    <Link to="home"      smooth={true} duration={500} offset={-130} className="nav-link">     <i className='bx nav-icons  bx-home'></i> Home</Link>          </li>
+                    <li>    <Link to="about"     smooth={true} duration={500} offset={-120} className="nav-link">    <i className='bx nav-icons bx-user'></i> About</Link>          </li>
+                    <li>    <Link to="skills"    smooth={true} duration={500} offset={-85} className="nav-link">   <i className='bx nav-icons bx-award' ></i> Skills</Link>       </li>
+                    <li>    <Link to="services"  smooth={true} duration={500} offset={-85} className="nav-link">  <i className='bx nav-icons bx-briefcase' ></i> Services</Link> </li>
+                    <li>    <Link to="portfolio" smooth={true} duration={500} offset={-85} className="nav-link"><i className='bx nav-icons bx-image' ></i> Portfolio</Link>    </li>
+                    <li>    <Link to="contact"   smooth={true} duration={500} offset={-85} className="nav-link">  <i className='bx nav-icons bx-message-rounded-dots'></i> Contact</Link> </li>
                     
 
                 </ul>
