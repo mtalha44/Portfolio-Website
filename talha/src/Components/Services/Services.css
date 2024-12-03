@@ -12,7 +12,7 @@
 .service-title{
     line-height: 0px;
 }
-.skil-icon{
+.service-icon{
     font-size: 2rem;
 }
 .services-info-card{
@@ -31,14 +31,62 @@
 }
 .services-further-details{
     width: max-content;
+    cursor: pointer;
 }
 .services-option-icon{
     font-size: 1.3rem;
     margin-top: 3px;
 }
 
+.services-toggle-card{
+    border-radius: 8px;
+    margin: auto;
+    position: fixed; /* Makes it stay in the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
 
+    
+}
+.card-detail{
+    border-radius: 8px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background-color: white;
+    gap: 0.6rem; 
+    padding: 1rem 2rem 2rem 2rem;
+}
 
+.card-detail-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+}
+.card-detail-heading{
+    width: 100%;
+    text-align: center;
+}
+.card-detail-heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.gayab{
+    display: none;
+}
 
 @media screen and ( max-width : 795px){
     .services-info-card-details{
@@ -47,7 +95,32 @@
 }
 @media screen and ( max-width : 695px){
     .services-info-card-details{
-        width: 9rem;
+        width: 7rem;
     }
 
+}
+@media screen and ( max-width : 565px){
+    .services-info-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and ( max-width : 425px){
+    .services-info-card-details{
+        width: 6rem;
+    }
+    .services-name{
+        font-size: 1.2rem;
+    }
+    .service-icon{
+        font-size: 1.5rem;
+    }
+    .services-option-icon{
+        font-size: 1.2rem;
+        margin-top: 3px;
+    }
+    .services-further-details{
+        font-size: 0.85rem;
+    }
 }
