@@ -9,6 +9,10 @@
     padding-bottom: 1rem;
     gap: 2rem;
 }
+.service-subtitle{
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
 .service-title{
     line-height: 0px;
 }
@@ -122,9 +126,6 @@
         display: flex;
         align-items: flex-start;
     }
-    i{
-        /* font-size: 1.2rem !important; */
-    }
 }
 @media screen and ( max-width : 425px){
     .services-info-card-details{
@@ -142,5 +143,18 @@
     }
     .services-further-details{
         font-size: 0.85rem;
+    }
+
+    .card-detail-heading {
+        font-size: 0.6rem;
+    }
+    .card-detail-list-icon {
+        font-size: 0.7rem;
+    }
+    .bx-badge-check{
+        font-size: 1rem;
+    }
+    .card-detail {
+        width: 16rem;
     }
 }

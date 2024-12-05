@@ -10,7 +10,7 @@ export const Services = () =>{
         <div className="services" id="services">
             <div className="service-title flex-col">
                 <h1>Services </h1> 
-                <p>My Offered Services</p>
+                <p className="service-subtitle">My Offered Services</p>
             </div>
             <div className="services-info">
                 <ServicesInfo/>

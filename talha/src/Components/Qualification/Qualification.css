@@ -1,0 +1,120 @@
+.qualification-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+.qualification-info-container{
+    color: rgb(71 85 105);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.qualification-subtitle{
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.bx-calendar{
+    font-size: 1rem;
+}
+.qualification-title{
+    line-height: 1px;
+}
+.qualification-tabs{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+.qualification-tabs-name{
+    gap: 0.2rem;
+    cursor: pointer;
+    color: rgb(71 85 105);
+}
+.separate-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.separate-circles-div{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(71 85 105);
+}
+.separate-straight-line{
+    width: 5px;
+    background-color: rgb(71 85 105);
+    height: 5.6rem;
+}
+
+.left-side-qualification{
+    display: flex;
+    flex-direction: column;
+    gap:4.7rem;
+}
+.right-side-qualification{
+    display: flex;
+    flex-direction: column;
+   margin-top: 6.6rem;
+   gap: 5rem;
+}
+.edu-year,.exp-year{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.edu-course,.exp-course{
+    font-size: 1.1rem;
+}
+
+.close-qualification-tab{
+    display: none;
+}
+.isActive{
+    color: black;
+}
+
+@media screen and (max-width: 465px) {
+    .qualification-tabs-name,.isActive{
+       font-size: 1rem;
+    }
+    .qualification-info-container{
+        gap: 1.1rem;
+    }
+    .education-detail,.experience-detail{
+        width: 6rem;
+    }
+}
+@media screen and (max-width: 565px) {
+    .qualification-info-container{
+        gap: 1.5rem;
+    }
+    .separate-circles-div {
+        width: 8px;
+        height: 8px;
+    }
+    .separate-straight-line {
+        width: 3px;
+        height: 6rem;
+    }
+    .edu-institute,.edu-year,.exp-institute,.exp-year{
+        font-size: 0.8rem;
+    }
+    .edu-course,.exp-course{
+        font-size: 1rem;
+    }
+    .left-side-qualification {
+        gap: 5.9rem;
+    }
+
+}
