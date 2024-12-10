@@ -16,10 +16,9 @@ export const Qualification = () =>{
                 <span className={`flex-row ${ showTab === 0 ? 'qualification-tabs-name' : 'isActive' }`} onClick={() => setShowTab(1)}> <i class='bx bxs-graduation'></i> Education</span>
                 <span className={ `flex-row ${  showTab === 1 ? 'qualification-tabs-name' : 'isActive' } `} onClick={() => setShowTab(0)}> <i className='bx bx-briefcase'></i> Experience</span>
             </div>
-            <div className="qualification-info">
+            <div className="qualification-info">         
                 <QualificationInfo showTab = {showTab} />
             </div>
-
         </div>
         </>
     )
