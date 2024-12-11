@@ -7,6 +7,7 @@ import { Skills } from './Components/Skills/Skills'
 import { Services } from './Components/Services/Services'
 import { Qualification } from './Components/Qualification/Qualification'
 import { Testimonials } from './Components/Testimonials/Testimonials'
+import { Contact } from './Components/Contact/Contact'
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <Services />
         <Qualification />
         <Testimonials/>
+        <Contact/>
       </div>
     </>
   )
