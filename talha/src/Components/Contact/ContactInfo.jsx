@@ -1,4 +1,5 @@
 import "./Contact.css"
+import { ContactForm } from "./ContactForm"
 
 const socialDetails = [
     {
@@ -11,7 +12,7 @@ const socialDetails = [
         icon : "bx bx-mail-send",
         name : "Email",
         contact : "mt4458649@gmail.com" ,
-        link : "https://mail.google.com/mt4458649@gmail.com"
+        link : "https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrkWCjwJZkWXPlBkPTGLfJcFlhWzWgSsKHwXLQcBZsrCblJPgQLhBBrjPqPsRpLLfPGCpg"
     },
     {
         icon : "bx bx-chat",
@@ -38,23 +39,7 @@ export const ContactInfo = () => {
 
            <div className="contact-info-form flex-col">
                 <h3>Write me your Project</h3>
-            <form className="contact-form">
-                <div>
-                    <label htmlFor="name" className="mylabel"  id="contact-user-name" >Name</label>
-                    <input type="text" className="contact-input"/>
-                </div>
-                <div>
-                    <label htmlFor="email" className="mylabel">Email</label>
-                    <input type="email" name="" id="" className="contact-input"/>
-                </div>
-                <div>
-                    <label htmlFor="project" className="mylabel">Project</label><br />
-                    <textarea name="" id="contact-project" cols="27" rows="5"></textarea>
-                </div>
-                <div>
-                    <button type="submit" className="contact-submit-btn flex-row">Submit <i class='bx bx-send'></i> </button>
-                </div>
-            </form>
+                <ContactForm/>
            </div>
 
         </div>
@@ -62,6 +47,9 @@ export const ContactInfo = () => {
 }
 
 const SocialDetails = () => {
+    const handleLink = (link) =>{
+        window.open(link);
+    }
     return (
         <>
           {
@@ -74,7 +62,7 @@ const SocialDetails = () => {
                                 <h4 className="contact-name"> {social.name} </h4>
                                 <p className="contact-number">{social.contact}</p>
                             </div>
-                            <div className="write-btn flex-row">
+                            <div className="write-btn flex-row" onClick={() => handleLink(social.link)}>
                                 <p>Write me</p> 
                                 <i className='bx bx-right-arrow-alt'></i>                            
                             </div>

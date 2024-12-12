@@ -1,7 +1,6 @@
 
 .contact{
     margin-top: 5rem;
-    margin-bottom: 5rem;
 }
 .contact-title{
     line-height: 1px;
@@ -52,6 +51,7 @@
     padding-left: 1.5rem;
     font-size: 1rem;
     background-color: rgb(245, 243, 243);
+    color: rgb(71 85 105);
 }
 .contact-input{
     width: 90%;
@@ -96,6 +96,7 @@
     /* font-size: 1rem;
     background-color: rgb(245, 243, 243); */
     /* font-size: larger; */
+    color: rgb(71 85 105);
 }
 .contact-submit-btn{
     height: 2.8rem;
@@ -125,6 +126,9 @@
 }
 .write-btn,.contact-number{
     color: rgb(71 85 105);
+}
+.write-btn{
+    cursor:pointer;
 }
 .bx-right-arrow-alt{
     font-size: 1rem;
@@ -179,9 +183,6 @@
     .contact-form {
         align-items: center;
         width: 17rem;
-    }
-    .contact-input {
-        /* width: 80%; */
     }
 }
 @media screen and (max-width: 345px) {

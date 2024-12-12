@@ -24,7 +24,7 @@
 .logo{
     height: 6vh;
     display:block;
-    transform: translateX(20px);
+    transform: translate(22px , -3px);
 }
 .navbar-lg{
     width: 50%; 

@@ -8,6 +8,9 @@ import { Services } from './Components/Services/Services'
 import { Qualification } from './Components/Qualification/Qualification'
 import { Testimonials } from './Components/Testimonials/Testimonials'
 import { Contact } from './Components/Contact/Contact'
+import { Footer } from './Components/Footer/Footer'
+
+
 function App() {
   return (
     <>
@@ -21,6 +24,7 @@ function App() {
         <Testimonials/>
         <Contact/>
       </div>
+      <Footer/>
     </>
   )
 }
