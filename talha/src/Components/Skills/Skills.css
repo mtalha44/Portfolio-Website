@@ -33,8 +33,8 @@
     width: 25rem;
     gap: 1rem;
     border-radius: 12px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    /* background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
 }
 .skill-info-comp{
     display: flex;
@@ -44,6 +44,7 @@
     align-items: center;
     justify-content: space-around;
 }
+
 .skill-level{
     font-size:small;
 }

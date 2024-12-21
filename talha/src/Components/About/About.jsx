@@ -26,7 +26,7 @@ const Achievments = [
 ]
     return (
         <>
-            <section className="about" id="about">
+            <section className="about" id="about" name="about">
                 <div className="about-title-container">
                     <h1 className="about-title">About Me</h1>
                     <p className="about-subtitle">My Introduction</p>

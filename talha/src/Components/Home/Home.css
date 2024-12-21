@@ -145,7 +145,9 @@
     width : 30px ;
     animation: shake 0.8s infinite;
 }
-
+.hide-scroll{
+  visibility: hidden;
+}
 @keyframes shake {
   0%, 100% {
     transform: rotate(0);
@@ -188,6 +190,11 @@
 
 .bx-mouse{
     font-size: 2.5rem;
+    /* transition: 5s ease-in; */
+  }
+  .bx-transition{
+    margin-left: -5.5rem;
+    transition: all 0.4s linear;
   }
 .scroll-arrow{
     font-size: 1.8rem;
@@ -195,12 +202,14 @@
   .scroll-bth-handle{
       cursor: pointer;
       color: rgb(71 85 105);
+      
   }
- 
+  .scroll-bth-handle:hover{
+      color: rgb(34 87 122);
+  }
   .scroll-text{
     font-size:1.2rem;
 }
-
 /* Media queries for responsiveness */
 
 @media screen and (max-width: 975px) {

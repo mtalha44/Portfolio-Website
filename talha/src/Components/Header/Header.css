@@ -51,6 +51,9 @@
 .nav-link:hover,.logo-text:hover{
     color: black;
 }
+.active{
+    color: black;
+}
 .nav-icons,
 .bx-menu,
 .bx-x{

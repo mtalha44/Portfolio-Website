@@ -6,7 +6,7 @@ export const Qualification = () =>{
     const [ showTab , setShowTab ] = useState(1);
     return (
         <>
-        <div className="qualification-section">
+        <div className="qualification-section" id='qualification'>
 
             <div className="qualification-title flex-col">
                 <h1 className="qualification-heading">Qualification</h1>
